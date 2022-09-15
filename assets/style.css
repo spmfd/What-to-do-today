@@ -14,6 +14,12 @@ body {
     width:100%;
   }
   
+  h2 {
+    border-top: dotted;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+  }
 
   .jumbotron {
     text-align: center;
@@ -61,7 +67,7 @@ body {
   }
   
   .saveBtn {
-    padding: 15px;
+    padding: 20px;
     border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
