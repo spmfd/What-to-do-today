@@ -21,3 +21,8 @@ var interval = setInterval(function() {
     localStorage.setItem(id,userInput)
   })
 
+  for (let i=9;i<=17;i++){
+    var storedEntry = localStorage.getItem(i)
+    $("#"+i).parent().siblings(".col-8").children("textarea").val(storedEntry)
+  }
+
