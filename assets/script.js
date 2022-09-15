@@ -38,7 +38,7 @@ var interval = setInterval(function() {
   }
 
   // Cleared Button and message
-  const textarea = document.getElementById('txtclr')
+  var textarea = document.getElementById('txtclr')
   textarea.value = '';
 
   $(".clearBtn").on("click",function () {
