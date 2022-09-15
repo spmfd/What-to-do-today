@@ -11,19 +11,21 @@ body {
     color: #000000;
     border-left: 1px solid black;
     padding: 10px;
+    width:100%;
   }
   
-.time {
-    border-style: dotted solid none none;
-    height:90px;
-}
+/* span { */
+    /* border-style: dotted solid none none; */
+    /* height:90px; */
+/* } */
 
 
 input[type=text] {
     width: 100%;
+
     background-color: grey;
     border-style: solid none solid none;
-    height: 90px;
+    /* height: 90px; */
 }
 
   .jumbotron {
@@ -46,6 +48,7 @@ input[type=text] {
   .row {
     white-space: pre-wrap;
     height: 80px;
+    font-size: 24px;
     border-top: 1px solid white;
   }
   
@@ -71,7 +74,7 @@ input[type=text] {
   }
   
   .saveBtn {
-    padding: 25px;
+    padding: 15px;
     border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -80,7 +83,7 @@ input[type=text] {
   }
   
   .saveBtn i:hover {
-    font-size: 20px;
+    /* font-size: 20px; */
     transition: all 0.3s ease-in-out;
   }
   

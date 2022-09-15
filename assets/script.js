@@ -11,3 +11,13 @@ var interval = setInterval(function() {
                          .substring(0,3).toUpperCase());
     $('#currentDay').html(todaysDate + " " + momentNow.format('hh:mm:ss A'));
   }, 100);
+
+
+
+  $(".saveBtn").on("click",function(){
+    var userInput = $(this).parent().siblings(".col-8").children("textarea").val()
+    var currentTime = $(this).parent().siblings(".time").children("span").text() 
+    var id = $(this).attr("id")
+    localStorage.setItem(id,userInput)
+  })
+
