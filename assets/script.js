@@ -1,4 +1,6 @@
-// Moment.js
+// Timer
+
+
 var todaysDate = moment().format("Do MMM YYYY");
 var currentHour = moment().format('h:mm:ss a');
 
@@ -12,7 +14,7 @@ var interval = setInterval(function() {
     $('#currentDay').html(todaysDate + " " + momentNow.format('hh:mm:ss A'));
   }, 100);
 
-
+// Saves data to local storage
 
   $(".saveBtn").on("click",function(){
     var userInput = $(this).parent().siblings(".col-8").children("textarea").val()
@@ -20,6 +22,8 @@ var interval = setInterval(function() {
     var id = $(this).attr("id")
     localStorage.setItem(id,userInput)
   })
+
+  // Sets backgrounds for data entry fields based on time
 
   for (let i=9;i<=17;i++){
     var storedEntry = localStorage.getItem(i)
