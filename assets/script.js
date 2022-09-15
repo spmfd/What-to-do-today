@@ -24,5 +24,13 @@ var interval = setInterval(function() {
   for (let i=9;i<=17;i++){
     var storedEntry = localStorage.getItem(i)
     $("#"+i).parent().siblings(".col-8").children("textarea").val(storedEntry)
+    if(i<hour) {
+      $("#"+i).parent().siblings(".col-8").children("textarea").addClass("past")
+    }else if( i === hour){
+      $("#"+i).parent().siblings(".col-8").children("textarea").addClass("present")
+    } else {
+      $("#"+i).parent().siblings(".col-8").children("textarea").addClass("future")
+    }
   }
 
+  
