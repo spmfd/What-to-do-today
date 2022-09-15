@@ -18,15 +18,16 @@
         <h1 class="display-3">Work Day Scheduler</h1>
         <p class="lead">A simple calendar app for scheduling your work day</p>
         <p id="currentDay" class="lead"></p>
+        <button class="clearBtn" onclick="clearedmsg()">Clear Data</button>
     </header>
     <div class="container">
-        <!-- <div class="col-22"> -->
+            <div id="cleared"> </div>
             <div class="row">
                 <div class="col-2 time">
-                    <span>09:00 AM</span>
+                    <h2>09:00 AM</h2>
                 </div>
                 <div class="col-8">
-                    <textarea rows="2" ></textarea>
+                    <textarea id="txtclr" rows="2" ></textarea>
                 </div>
                 <div class="col-2">
                     <button style="font-size:24px" id="9" class="saveBtn"><i class="fa fa-save"></i></button>
@@ -34,10 +35,10 @@
             </div>
             <div class="row">
                 <div class="col-2 time">
-                    <span>10:00 AM</span>
+                    <h2>10:00 AM</h2>
                 </div>
                 <div class="col-8">
-                    <textarea rows="2" ></textarea>
+                    <textarea id="txtclr" rows="2"></textarea>
                 </div>
                 <div class="col-2">
                     <button style="font-size:24px" id="10" class="saveBtn"><i class="fa fa-save"></i></button>
@@ -45,10 +46,10 @@
             </div>
             <div class="row">
                 <div class="col-2 time">
-                    <span>11:00 AM</span>
+                    <h2>11:00 AM</h2>
                 </div>
                 <div class="col-8">
-                    <textarea rows="2" ></textarea>
+                    <textarea id="txtclr" rows="2"></textarea>
                 </div>
                 <div class="col-2">
                     <button style="font-size:24px" id="11" class="saveBtn"><i class="fa fa-save"></i></button>
@@ -56,10 +57,10 @@
             </div>
             <div class="row">
                 <div class="col-2 time">
-                    <span>12:00 PM</span>
+                    <h2>12:00 PM</h2>
                 </div>
                 <div class="col-8">
-                    <textarea rows="2" ></textarea>
+                    <textarea id="txtclr" rows="2"></textarea>
                 </div>
                 <div class="col-2">
                     <button style="font-size:24px" id="12" class="saveBtn"><i class="fa fa-save"></i></button>
@@ -67,10 +68,10 @@
             </div>
             <div class="row">
                 <div class="col-2 time">
-                    <span>01:00 PM</span>
+                    <h2>01:00 PM</h2>
                 </div>
                 <div class="col-8">
-                    <textarea rows="2" ></textarea>
+                    <textarea id="txtclr" rows="2"></textarea>
                 </div>
                 <div class="col-2">
                     <button style="font-size:24px" id="13" class="saveBtn"><i class="fa fa-save"></i></button>
@@ -78,10 +79,10 @@
             </div>
             <div class="row">
                 <div class="col-2 time">
-                    <span>02:00 PM</span>
+                    <h2>02:00 PM</h2>
                 </div>
                 <div class="col-8">
-                    <textarea rows="2" ></textarea>
+                    <textarea id="txtclr" rows="2"></textarea>
                 </div>
                 <div class="col-2">
                     <button style="font-size:24px" id="14" class="saveBtn"><i class="fa fa-save"></i></button>
@@ -89,10 +90,10 @@
             </div>
             <div class="row">
                 <div class="col-2 time">
-                    <span>03:00 PM</span>
+                    <h2>03:00 PM</h2>
                 </div>
                 <div class="col-8">
-                    <textarea rows="2" ></textarea>
+                    <textarea id="txtclr" rows="2"></textarea>
                 </div>
                 <div class="col-2">
                     <button style="font-size:24px" id="15" class="saveBtn"><i class="fa fa-save"></i></button>
@@ -100,10 +101,10 @@
             </div>
             <div class="row">
                 <div class="col-2 time">
-                    <span>04:00 PM</span>
+                    <h2>04:00 PM</h2>
                 </div>
                 <div class="col-8">
-                    <textarea rows="2" ></textarea>
+                    <textarea id="txtclr" rows="2"></textarea>
                 </div>
                 <div class="col-2">
                     <button style="font-size:24px" id="16" class="saveBtn"><i class="fa fa-save"></i></button>
@@ -111,10 +112,10 @@
             </div>
             <div class="row">
                 <div class="col-2 time">
-                    <span>05:00 PM</span>
+                    <h2>05:00 PM</h2>
                 </div>
                 <div class="col-8">
-                    <textarea rows="2" ></textarea>
+                    <textarea id="txtclr" rows="2"></textarea>
                 </div>
                 <div class="col-2">
                     <button style="font-size:24px" id="17" class="saveBtn"><i class="fa fa-save"></i></button>
@@ -122,7 +123,6 @@
             </div>
 
         </div>
-    <!-- </div> -->
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

@@ -37,4 +37,17 @@ var interval = setInterval(function() {
     }
   }
 
-  
+  // Cleared Button and message
+  const textarea = document.getElementById('txtclr')
+  textarea.value = '';
+
+  $(".clearBtn").on("click",function () {
+    localStorage.clear();
+    textarea.value = '';
+  })
+
+  let clearedmsg = () => {
+    let ele = document.getElementById('cleared');
+    let node = document.createTextNode ('You have cleared your calendar!');
+    ele.appendChild(node);
+}
