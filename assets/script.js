@@ -36,18 +36,3 @@ var interval = setInterval(function() {
       $("#"+i).parent().siblings(".col-8").children("textarea").addClass("future")
     }
   }
-
-  // Cleared Button and message
-  var textarea = document.getElementById('txtclr')
-  textarea.value = '';
-
-  $(".clearBtn").on("click",function () {
-    localStorage.clear();
-    textarea.value = '';
-  })
-
-  let clearedmsg = () => {
-    let ele = document.getElementById('cleared');
-    let node = document.createTextNode ('You have cleared your calendar!');
-    ele.appendChild(node);
-}
