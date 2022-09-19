@@ -12,6 +12,7 @@ No installation required. Please view website at the provided URL:
 
 ## Usage
 
+![screenshot](./assets/schedule.png)
 
 ## Credits
 
