@@ -9,9 +9,11 @@ With the addition of the time variable we are also able to manipulate our backgr
 ## Installation
 
 No installation required. Please view website at the provided URL: 
+https://github.com/spmfd/What-to-do-today/blob/main/assets/schedule.png
 
 ## Usage
 
+![screenshot](./assets/schedule.png)
 
 ## Credits
 
